@@ -3,7 +3,6 @@ title: Home
 nav_order: 1
 ---
 
-{: .highlight }
 **Manc-COJO** is a tool for multi-ancestry conditional and joint analysis (COJO) of GWAS summary statistics.
 
 {: .highlight }
