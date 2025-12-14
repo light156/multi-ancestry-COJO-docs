@@ -14,7 +14,7 @@ nav_order: 2
 
 ### Original GCTA Options
 
-These options and flags are functionally identical to those in the original GCTA. You can find more detailed definitions at [https://yanglab.westlake.edu.cn/software/gcta](https://yanglab.westlake.edu.cn/software/gcta).
+These options and flags are functionally identical to those in [original GCTA](https://yanglab.westlake.edu.cn/software/gcta).
 
 | Program mode    | Type     | Description (exactly one of these three is required)          |
 |:-------------|:------------------|:------|
