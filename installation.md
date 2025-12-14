@@ -29,5 +29,5 @@ You can confirm it runs correctly by checking its usage information, which print
 ```
 
 > If you run into compatibility issues on any system, you may
-- Try building from source code by following the steps in [Building from source](build_tutorial.md) (which is quite simple).
+- Try building from source code by following the steps in [Building from source](https://light156.github.io/multi-ancestry-COJO-docs/build_tutorial.html) (which is quite simple).
 - Feel free to reach out and we are very happy to help.
