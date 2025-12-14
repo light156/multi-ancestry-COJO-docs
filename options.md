@@ -3,7 +3,7 @@ title: Command options
 nav_order: 2
 ---
 
-## Supported Command-line Options
+# Supported Command-line Options
 
 ### Input Data Format Options (exactly one required)
 
@@ -43,7 +43,7 @@ These options and flags are functionally identical to those in the original GCTA
 ### Multi-ancestry COJO Options/Flags
 
 | Option         | Description                                                      | Default       |
-|:-------------|:------------------|:------|
+|:-------------|:------------------|
 | `--fix`        | File path for fixed SNPs (non-removable in selection)            |               |
 | `--fix-snp`    | A list of fixed SNPs (non-removable in selection)                |               |
 | `--R2`         | R² threshold for forward selection                               | `-1` (none)   |
@@ -51,7 +51,7 @@ These options and flags are functionally identical to those in the original GCTA
 | `--iter`       | Maximum number of iterations                                     | `10000`       |
 
 | Flag         | Description                                                       |
-|:-------------|:------------------|:------|
+|:-------------|:------------------|
 | `--freq-mode-and`  | Only keep SNPs that reach MAF threshold in sumstat of all cohorts<br>By default, keep SNPs that reach threshold in at least one cohort |
 | `--MDISA`    | Run single-ancestry analysis after multi-ancestry COJO<br> By default, only run COJO selection on multiple cohorts and exit |
 | `--output-all`     | Save all .cma.cojo, .jma.cojo and .ldr.cojo results to file    |
@@ -60,6 +60,6 @@ These options and flags are functionally identical to those in the original GCTA
 ### Algorithm options
 
 | Option | Allowed Values | Default | Description |
-|:-------------|:------------------|:------|
+|:-------------|:------------------|:------|:------|
 | `--slct-mode` | `GCTA`, `removeNA`, `imputeNA` | `GCTA` | Iterative SNP selection method |
 | `--effect-size-mode` | `GCTA`, `removeNA`, `imputeNA` | `GCTA` | Effect size estimation method |
