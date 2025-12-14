@@ -3,8 +3,9 @@ title: Building from source
 nav_order: 3
 ---
 
-If you want the fastest performance on your machine or plan to modify the code, please clone the repository and build it yourself from the command line. Below are simple example commands for **Linux** and **macOS**.
+If you want the fastest performance on your machine or plan to modify the code, please clone the repository and build it yourself from the command line. 
 
+Below are simple example commands for **Linux** and **macOS**.
 > **Requirements**
 > - A C++11-compatible compiler (`GCC ≥ 4.8.1` or `Clang ≥ 3.3`)
 > - Optional: OpenMP for multithreading (default on Linux; not included with Apple Clang)
