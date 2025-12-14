@@ -1,14 +1,15 @@
 ---
-title: Home
+title: Installation
 nav_order: 2
 ---
 
-You can click the download links here:
+# Installation
 
-[Download link (64-bit Linux systems)](https://github.com/light156/multi-ancestry-COJO/releases/download/v1.0.0/manc_cojo){: .btn .btn-green }
+You can directly download the software here:
 
+[Download link (64-bit Linux systems)](https://github.com/light156/multi-ancestry-COJO/releases/download/v1.0.0/manc_cojo){: .btn .btn-outline }
 
-or using the git clone command:
+Or clone the repository using Git:
 
 ```bash
 git clone https://github.com/light156/multi-ancestry-COJO.git
