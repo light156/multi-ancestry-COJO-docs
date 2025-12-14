@@ -8,29 +8,22 @@ nav_order: 2
 ### Input Data Format Options (exactly one required)
 
 | Option      | Description                                                        |
-| ----------- | ------------------------------------------------------------------ |
+|:-------------|:------------------|:------|
 | `--bfile`   | PLINK binary file prefix for each cohort `.bim .bed .fam`    |
 | `--ld`      | PLINK LD file prefix for each cohort `.bim .ld (.frq)`       |
-
-### Algorithm options
-
-| Option | Allowed Values | Default | Description |
-| ------- | --------------- | -------- | ------------ |
-| `--slct-mode` | `GCTA`, `removeNA`, `imputeNA` | `GCTA` | Iterative SNP selection method |
-| `--effect-size-mode` | `GCTA`, `removeNA`, `imputeNA` | `GCTA` | Effect size estimation method |
 
 ### Original GCTA Options
 
 These options and flags are functionally identical to those in the original GCTA. You can find more detailed definitions at [https://yanglab.westlake.edu.cn/software/gcta](https://yanglab.westlake.edu.cn/software/gcta).
 
 | Program mode    | Type     | Description (exactly one of these three is required)          |
-| --------------- | -------- | ------------------------------------------------------------- |
+|:-------------|:------------------|:------|
 | `--cojo-slct`   | *flag*   | Stepwise iterative selection of independently associated SNPs |
 | `--cojo-joint`  | *flag*   | Calculate joint effects for provided SNPs and exit            |
 | `--cojo-cond`   | *option* | Calculate conditional effects for provided SNPs and exit<br> Must provide a file with a list of SNPs |
 
 | Option         | Description                                                    | Default          |
-| ------------------ | -------------------------------------------------------------- | ---------------- |
+|:-------------|:------------------|:------|
 | `--cojo-file`      | GWAS summary statistics file for each cohort in GCTA-COJO format<br>(Header `SNP A1 A2 freq b se p N`)    | `Required`       |
 | `--out`            | Output file path prefix                                        | `Required`       |
 | `--cojo-wind`      | SNP position window in Kb (`-1` disables windowing)            | `10000` (±1e7)   |
@@ -50,7 +43,7 @@ These options and flags are functionally identical to those in the original GCTA
 ### Multi-ancestry COJO Options/Flags
 
 | Option         | Description                                                      | Default       |
-| -------------- | ---------------------------------------------------------------- | ------------- |
+|:-------------|:------------------|:------|
 | `--fix`        | File path for fixed SNPs (non-removable in selection)            |               |
 | `--fix-snp`    | A list of fixed SNPs (non-removable in selection)                |               |
 | `--R2`         | R² threshold for forward selection                               | `-1` (none)   |
@@ -58,7 +51,15 @@ These options and flags are functionally identical to those in the original GCTA
 | `--iter`       | Maximum number of iterations                                     | `10000`       |
 
 | Flag         | Description                                                       |
-| ------------ | ----------------------------------------------------------------- |
+|:-------------|:------------------|:------|
 | `--freq-mode-and`  | Only keep SNPs that reach MAF threshold in sumstat of all cohorts<br>By default, keep SNPs that reach threshold in at least one cohort |
 | `--MDISA`    | Run single-ancestry analysis after multi-ancestry COJO<br> By default, only run COJO selection on multiple cohorts and exit |
 | `--output-all`     | Save all .cma.cojo, .jma.cojo and .ldr.cojo results to file    |
+
+
+### Algorithm options
+
+| Option | Allowed Values | Default | Description |
+|:-------------|:------------------|:------|
+| `--slct-mode` | `GCTA`, `removeNA`, `imputeNA` | `GCTA` | Iterative SNP selection method |
+| `--effect-size-mode` | `GCTA`, `removeNA`, `imputeNA` | `GCTA` | Effect size estimation method |
