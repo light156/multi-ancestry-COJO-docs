@@ -1,6 +1,5 @@
 ---
 title: Command options
-layout: home
 nav_order: 2
 ---
 
