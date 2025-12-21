@@ -1,0 +1,42 @@
+title: Manc-COJO
+description: Multi-ancestry Conditional and Joint Analysis
+theme: just-the-docs
+source: docs
+
+permalink: pretty
+
+url: https://light156.github.io
+
+nav_external_links:
+  - title: Manc-COJO on GitHub
+    url: https://github.com/light156/multi-ancestry-COJO
+    hide_icon: false # set to true to hide the external link icon - defaults to false
+    opens_in_new_tab: false # set to true to open this link in a new tab - defaults to false
+
+defaults:
+  - 
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+
+
+aux_links: # remove if you don't want this link to appear on your pages
+  Manc-COJO on GitHub: https://github.com/light156/multi-ancestry-COJO
+
+callouts_level: quiet # or loud
+callouts:
+  highlight:
+    color: purple
+  important:
+    title: Important
+    color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: yellow
+  warning:
+    title: Warning
+    color: red
