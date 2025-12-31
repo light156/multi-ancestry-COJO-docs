@@ -18,8 +18,7 @@ Below are simple example commands for **Linux** and **macOS**.
 git clone https://github.com/light156/multi-ancestry-COJO.git
 cd multi-ancestry-COJO
 
-g++ -std=c++11 -O3 -march=native -DNDEBUG -fopenmp -pthread \
-    -I include -I external -I external/Eigen src/*.cpp -o manc_cojo
+g++ -std=c++11 -O3 -march=native -DNDEBUG -fopenmp -pthread -I . src/*.cpp -o manc_cojo
 ```
 
 ### macOS
@@ -30,8 +29,7 @@ So it is fine to just build a single-threaded version for simplicity:
 git clone https://github.com/light156/multi-ancestry-COJO.git
 cd multi-ancestry-COJO
 
-clang++ -std=c++11 -O3 -march=native -DNDEBUG \
-    -I include -I external -I external/Eigen src/*.cpp -o manc_cojo
+clang++ -std=c++11 -O3 -march=native -DNDEBUG -I . src/*.cpp -o manc_cojo
 ```
 
 ### Windows
