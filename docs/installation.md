@@ -12,7 +12,7 @@ git clone https://github.com/light156/multi-ancestry-COJO.git
 cd multi-ancestry-COJO
 ```
 
-Or download our software program directly from the links below:
+Or download our software directly from the links below:
 
 ### [⬇️ Download link (Linux)](https://github.com/light156/multi-ancestry-COJO/releases/download/v1.0.0/manc_cojo)
 
@@ -28,13 +28,13 @@ On **Linux** and **macOS**, you may need to give the file permission to run:
 chmod +x manc_cojo
 ```
 
-To check that the program is working, run:
+To check that the software is working, run:
 
 ```bash
 ./manc_cojo --help
 ```
 
-This will print the available options and confirm that the program runs correctly.
+This will print the available options and confirm that it runs correctly.
 
 ---
 

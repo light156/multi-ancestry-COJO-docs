@@ -95,7 +95,7 @@ You can find an example usage in the [Tutorial](https://light156.github.io/multi
 The following behaviours differ intentionally from GCTA:
 
 - **Genotype filtering**  
-  Our program excludes SNPs whose genotypes are identical across all individuals.
+  Our software excludes SNPs whose genotypes are identical across all individuals.
 
 - **Allele reporting**  
   Both **A1** and **A2** are reported for each SNP in output files. **A1** corresponds to **refA** in the original GCTA output.
