@@ -64,7 +64,7 @@ You can verify that your output file is identical to the provided example output
 If the command produces no output, this confirms that the software is running correctly on your machine.  
 
 {: .highlight }
-People are often interested in these three columns `SNP`, `A1`, and `bJ`, which can be directly used to compute polygenic scores with the [PLINK `--score` function](https://www.cog-genomics.org/plink/1.9/score). `SNP`, `A1`, and `bJ` correspond to [variant ID col.], [allele col.], and [score col.], respectively.
+People are often interested in these three columns `SNP`, `A1`, and `bJ`, which can be directly used to compute polygenic scores with the [**PLINK --score function**](https://www.cog-genomics.org/plink/1.9/score). `SNP`, `A1`, and `bJ` correspond to [variant ID col.], [allele col.], and [score col.], respectively.
 
 ## Step 3: Run conditional or joint analysis
 
