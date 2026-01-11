@@ -22,7 +22,7 @@ tar -xzf tutorial_data.tar.gz
 After extraction, you should see the following files:
 - GWAS summary statistics file: `Height.sumstat`  
   **Must be in GCTA-COJO format**, with a header like: `SNP A1 A2 freq b se p N`, and the first 8 columns should be in this order.
-- PLINK = files[^1] [^2]: `1KGPhase3.w_hm3.bed` `1KGPhase3.w_hm3.bim` `1KGPhase3.w_hm3.fam`
+- PLINK binary files[^1] [^2]: `1KGPhase3.w_hm3.bed` `1KGPhase3.w_hm3.bim` `1KGPhase3.w_hm3.fam`
 - Example output for validation: `Height_analysis.jma.cojo.example`
 
 {: .highlight } 
