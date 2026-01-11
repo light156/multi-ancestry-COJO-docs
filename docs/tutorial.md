@@ -1,6 +1,6 @@
 ---
-title: Tutorial
-nav_order: 4
+title: Usage & Tutorial
+nav_order: 3
 has_children: true
 nav_fold: false
 ---
@@ -22,9 +22,7 @@ tar -xzf tutorial_data.tar.gz
 After extraction, you should see the following files:
 - GWAS summary statistics file: `Height.sumstat`  
   **Must be in GCTA-COJO format**, with a header like: `SNP A1 A2 freq b se p N`, and the first 8 columns should be in this order.
-- PLINK binary files[^1] [^2]: `1KGPhase3.w_hm3.bed` `1KGPhase3.w_hm3.bim` `1KGPhase3.w_hm3.fam`
-- Our software (Linux): `manc_cojo`  
-  (Replace with the corresponding one if you are using other systems, see [Installation](https://light156.github.io/multi-ancestry-COJO-docs/installation/))
+- PLINK = files[^1] [^2]: `1KGPhase3.w_hm3.bed` `1KGPhase3.w_hm3.bim` `1KGPhase3.w_hm3.fam`
 - Example output for validation: `Height_analysis.jma.cojo.example`
 
 {: .highlight } 
@@ -37,7 +35,6 @@ GWAS summary statistics come in various formats. To convert them to the GCTA-COJ
 > - On **Linux** and **macOS**, run `chmod +x manc_cojo` to make sure the software has execution permission. 
 > - On **macOS**, you may need to allow the software in Privacy & Settings.
 > - On **Windows**, for all the following commands, replace `\` to `^` in cmd.exe or `` ` `` in PowerShell, or run all commands on one line.
-
 
 Run the following command to perform COJO SNP selection:
 
@@ -62,12 +59,16 @@ In the output file, each row corresponds to a single SNP:
 - `freq b se p` are taken from the input GWAS summary statistics file. `n` is the estimated effective sample size for analysis (different from `N` in GWAS summary statistics). 
 - `bJ bJ_se pJ` represent the joint effect size, standard error, and p-value from a joint analysis of all the selected SNPs. 
 
-{: .note }
-You can check that your output file `Height_analysis.jma.cojo` should be identical to the provided example output file `Height_analysis.jma.cojo.example` by running:
+Note
+{: .label .label-yellow }
+
+You can verify that your output file `Height_analysis.jma.cojo` is identical to the provided example output file `Height_analysis.jma.cojo.example` by running:
+
 ```bash
 diff Height_analysis.jma.cojo Height_analysis.jma.cojo.example
 ```
-If it gives no output, this confirms that the software is running correctly on your machine.  
+If the command produces no output, this confirms that the software is running correctly on your machine.  
+
 
 {: .highlight }
 People are often interested in these three columns `SNP`, `A1`, and `bJ`, which can be directly used to compute polygenic scores with the [PLINK `--score` function](https://www.cog-genomics.org/plink/1.9/score). `SNP`, `A1`, and `bJ` correspond to [variant ID col.], [allele col.], and [score col.], respectively.
