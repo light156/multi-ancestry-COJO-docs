@@ -52,21 +52,16 @@ After completion, you should obtain:
 - an output file: `Height_analysis.jma.cojo`, which looks like this:
 ![jma_cojo_screenshot](https://light156.github.io/multi-ancestry-COJO-docs/jma_cojo_screenshot.png)
 
-<br>
  
 In the output file, each row corresponds to a single SNP: 
 - `Chr SNP bp A1 A2` denote the chromosome, SNP ID, base-pair position, the effect allele, and the other allele specified in the `.bim` file. 
 - `freq b se p` are taken from the input GWAS summary statistics file. `n` is the estimated effective sample size for analysis (different from `N` in GWAS summary statistics). 
 - `bJ bJ_se pJ` represent the joint effect size, standard error, and p-value from a joint analysis of all the selected SNPs. 
 
-Note
-{: .label .label-yellow } You can verify that your output file is identical to the provided example output file by running:
-
-```bash
-diff Height_analysis.jma.cojo Height_analysis.jma.cojo.example
-```
+{: .note }
+You can verify that your output file is identical to the provided example output file by running 
+`diff Height_analysis.jma.cojo Height_analysis.jma.cojo.example`. 
 If the command produces no output, this confirms that the software is running correctly on your machine.  
-
 
 {: .highlight }
 People are often interested in these three columns `SNP`, `A1`, and `bJ`, which can be directly used to compute polygenic scores with the [PLINK `--score` function](https://www.cog-genomics.org/plink/1.9/score). `SNP`, `A1`, and `bJ` correspond to [variant ID col.], [allele col.], and [score col.], respectively.
