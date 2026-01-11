@@ -94,16 +94,16 @@ You can find an example usage in the [Tutorial](https://light156.github.io/multi
 
 The following behaviours differ intentionally from GCTA:
 
-- **Genotype filtering**
+- **Genotype filtering**  
   Our program excludes SNPs whose genotypes are identical across all individuals.
+
+- **Allele reporting**  
+  Both **A1** and **A2** are reported for each SNP in output files. **A1** corresponds to **refA** in the original GCTA output.
 
 - **Output control**  
   By default, our software does not generate `.cma.cojo` and `.ldr.cojo` files, as these outputs can be very large and are not required for most use cases. Use `--output-all` to enable all output files. 
   
   This option will also record unqualified SNPs, such as those failing MAF thresholds, in the corresponding `.badsnps` files.
-
-- **Allele reporting**  
-  Both **A1** and **A2** are reported for each SNP in output files. **A1** corresponds to **refA** in the original GCTA output.
 
 - **Collinearity handling**  
   When collinearity issues arise among user-provided SNPs during conditional analysis (`--cojo-cond`) or joint analysis (`--cojo-joint`), GCTA terminates without output. In contrast, our software iteratively removes problematic SNPs until the issue is resolved. Removed SNPs are recorded in the `.log` file.
