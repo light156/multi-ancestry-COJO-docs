@@ -1,6 +1,6 @@
 ---
 title: Using on UKB-RAP
-parent: Tutorial
+parent: Usage & Tutorial
 nav_order: 2
 ---
 

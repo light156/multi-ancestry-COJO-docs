@@ -61,7 +61,6 @@ In the output file, each row corresponds to a single SNP:
 
 Note
 {: .label .label-yellow }
-
 You can verify that your output file `Height_analysis.jma.cojo` is identical to the provided example output file `Height_analysis.jma.cojo.example` by running:
 
 ```bash

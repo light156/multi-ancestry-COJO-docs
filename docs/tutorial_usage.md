@@ -1,6 +1,6 @@
 ---
 title: Advanced Usages
-parent: Tutorial
+parent: Usage & Tutorial
 nav_order: 1
 ---
 
