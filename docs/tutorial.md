@@ -60,8 +60,7 @@ In the output file, each row corresponds to a single SNP:
 - `bJ bJ_se pJ` represent the joint effect size, standard error, and p-value from a joint analysis of all the selected SNPs. 
 
 Note
-{: .label .label-yellow }
-You can verify that your output file `Height_analysis.jma.cojo` is identical to the provided example output file `Height_analysis.jma.cojo.example` by running:
+{: .label .label-yellow } You can verify that your output file is identical to the provided example output file by running:
 
 ```bash
 diff Height_analysis.jma.cojo Height_analysis.jma.cojo.example
