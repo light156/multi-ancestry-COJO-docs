@@ -25,7 +25,7 @@ After extraction, you should see the following files:
 - PLINK binary files[^1] [^2]: `1KGPhase3.w_hm3.bed` `1KGPhase3.w_hm3.bim` `1KGPhase3.w_hm3.fam`
 - Our software (Linux): `manc_cojo`  
   (Replace with the corresponding one if you are using other systems, see [Installation](https://light156.github.io/multi-ancestry-COJO-docs/installation/))
-- Example output for validation: `Height_analysis.jma.cojo.example_output`
+- Example output for validation: `Height_analysis.jma.cojo.example`
 
 {: .highlight } 
 GWAS summary statistics come in various formats. To convert them to the GCTA-COJO format, please refer to a dedicated [tutorial](https://github.com/zlintian/SBayesRC_pipeline?tab=readme-ov-file#cojo-format) by Dr. Tian Lin.
@@ -63,7 +63,11 @@ In the output file, each row corresponds to a single SNP:
 - `bJ bJ_se pJ` represent the joint effect size, standard error, and p-value from a joint analysis of all the selected SNPs. 
 
 {: .note }
-Your output file `Height_analysis.jma.cojo` should be identical to the provided example output file `Height_analysis.jma.cojo.example_output`. If so, this confirms that the software is running correctly on your machine.
+You can check that your output file `Height_analysis.jma.cojo` should be identical to the provided example output file `Height_analysis.jma.cojo.example` by running:
+```bash
+diff Height_analysis.jma.cojo Height_analysis.jma.cojo.example
+```
+If it gives no output, this confirms that the software is running correctly on your machine.  
 
 {: .highlight }
 People are often interested in these three columns `SNP`, `A1`, and `bJ`, which can be directly used to compute polygenic scores with the [PLINK `--score` function](https://www.cog-genomics.org/plink/1.9/score). `SNP`, `A1`, and `bJ` correspond to [variant ID col.], [allele col.], and [score col.], respectively.
