@@ -94,6 +94,9 @@ You can find an example usage in the [Tutorial](https://light156.github.io/multi
 
 The following behaviours differ intentionally from GCTA:
 
+- **Genotype filtering**
+  Our program excludes SNPs whose genotypes are identical across all individuals.
+
 - **Output control**  
   By default, our software does not generate `.cma.cojo` and `.ldr.cojo` files, as these outputs can be very large and are not required for most use cases. Use `--output-all` to enable all output files. 
   

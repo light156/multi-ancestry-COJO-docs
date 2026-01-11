@@ -18,7 +18,7 @@ Below are simple example commands for **Linux** and **macOS**.
 git clone https://github.com/light156/multi-ancestry-COJO.git
 cd multi-ancestry-COJO
 
-g++ -std=c++11 -O3 -march=native -DNDEBUG -fopenmp -pthread -I . src/*.cpp -o manc_cojo
+g++ -std=c++11 -O3 -march=native -DNDEBUG -fopenmp -I . src/*.cpp -o manc_cojo
 ```
 
 ### macOS
