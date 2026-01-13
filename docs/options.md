@@ -30,7 +30,7 @@ These options and flags are functionally identical to those in the [original GCT
 | `--cojo-p`         | Significance threshold for SNP selection (`0-1`)               | `5e-8`           |
 | `--cojo-collinear` | Colinearity threshold for SNP inclusion (`0–0.9999`)           | `0.9`            |
 | `--diff-freq`      | Frequency diff threshold between sumstat and PLINK (`0-1`)     | `0.2`            |
-| `--maf`            | Minor allele frequency threshold (`0-0.5`)                     | `0.01`           |
+| `--maf`            | Minor allele frequency threshold (`0-0.5`)                     | `0`              |
 | `--extract`        | File path of SNPs to be included                               |                  |
 | `--exclude`        | File path of SNPs to be excluded                               |                  |
 | `--extract-snp`    | A list of SNPs to be included                                  |                  |
