@@ -60,7 +60,7 @@ This functionality is enabled via the options `--fix` and `--fix-snp`:
 - `--fix`: provide a file containing a list of SNP IDs (one per line)
 - `--fix-snp`: provide SNP IDs directly on the command line
 
-For example, for three cohorts, if you want to exclude two SNPs and fix some SNPs in a given file for iterative selection, and use 5 threads to speed up computation, use:
+For example, for three cohorts, if you want to exclude two SNPs, fix some SNPs in a given file for iterative selection, and use 5 threads to speed up computation, use:
 
 ```bash
 ./manc_cojo \
