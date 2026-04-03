@@ -97,7 +97,7 @@ You can find an example usage in the [Tutorial](https://light156.github.io/multi
 ## Differences from GCTA-COJO 
 
 Functional differences:
-1. GCTA does not guard against numeric underflow, with p-values smaller than 1.7×10⁻³⁰⁸ stored as zero, which may occasionally lead to suboptimal SNPs being selected and influence subsequent steps. In comparison, our software uses absolute z-score instead of p-value for selection, which is mathematically equivalent but avoids numerical underflow. 
+1. GCTA does not guard against numeric underflow, with p-values smaller than 1.7×10⁻³⁰⁸ stored as zero. This may lead to suboptimal SNPs being selected and influence subsequent steps. In comparison, our software uses absolute z-score instead of p-value for selection, which is mathematically equivalent but avoids numerical underflow. 
 2. Multiallelic SNPs sharing the same SNP ID are excluded due to the biallelic assumptions of the current model. If you really want to include them, you need to manually rename them to distinct SNP IDs in the input files. 
 3. SNPs with identical genotypes across all individuals are excluded.
 4. When collinearity issues arise among user-provided SNPs during conditional analysis (`--cojo-cond`) or joint analysis (`--cojo-joint`), GCTA terminates without output. In contrast, our software iteratively removes problematic SNPs until the issue is resolved. Removed SNPs are recorded in the `.log` file.
