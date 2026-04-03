@@ -70,7 +70,6 @@ Below options are extended to multiple cohorts (please see [Advanced Usages](htt
 | `--output-all`    | Save all `.cma.cojo .jma.cojo .ldr.cojo .badsnps` files |
 
 
-
 ## Algorithm options
 
 Manc-COJO implements three algorithms for both:
