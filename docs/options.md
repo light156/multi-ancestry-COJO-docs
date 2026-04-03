@@ -57,8 +57,8 @@ Below options are extended to multiple cohorts (please see [Advanced Usages](htt
 | `--fix`        | File path for fixed SNPs for iterative selection             |               |
 | `--fix-snp`    | A list of fixed SNPs for iterative selection                 |               |
 | `--fix-p`         | Significance threshold for fixed SNPs (`0-1`)               | `5e-8`           |
-| `--fix-col` | Colinearity threshold for fixed SNPs (`0–0.9999`)           | `0.9`            |
-| `--fix-cojo-col` | Colinearity threshold between fixed SNPs and selected SNPs (`0–0.9999`)           | `0.9`            |
+| `--fix-col` | Collinearity threshold for fixed SNPs (`0–0.9999`)           | `0.9`            |
+| `--fix-cojo-col` | Collinearity threshold between fixed SNPs and selected SNPs (`0–0.9999`)           | `0.9`            |
 | `--R2`         | R² incremental threshold for forward selection               | `-1` (none)   |
 | `--R2back`     | R² incremental threshold for backward selection              | `-1` (none)   |
 

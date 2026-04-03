@@ -14,7 +14,7 @@ Many options can now accept multiple values. Specifically,
 - For `--keep` and `--remove`, empty strings ("") can be used when an option is not applied to a given cohort.
 - For `--diff-freq`, `--maf`, `--maf-sumstat`, and `--geno`, either provide one value for all cohorts, or one value per cohort.
 
-For example, for two cohorts, if you want to keep certain individuals in `list1.fam` for cohort 1 but remove individuals in `list2.fam` for cohort 2, exclude SNPs with frequency differences > 0.2 between genotype and sumstat file in cohort 1, and exclude all SNPs with MAF < 0.005 in genotypes for both cohorts, use the following command:
+For example, for two cohorts, if you want to keep certain individuals in `list1.fam` for cohort 1 but remove individuals in `list2.fam` for cohort 2, exclude SNPs with frequency differences > 0.2 between genotype and sumstat file only in cohort 1, and exclude all SNPs with MAF < 0.005 in genotypes for both cohorts, use the following command:
 
 ```bash
 ./manc_cojo \
@@ -60,7 +60,7 @@ This functionality is enabled via the options `--fix` and `--fix-snp`:
 - `--fix`: provide a file containing a list of SNP IDs (one per line)
 - `--fix-snp`: provide SNP IDs directly on the command line
 
-For example, for three cohorts, if you want to exclude two SNPs and fix three SNPs for iterative selection, and use 5 threads to speed up computation, use:
+For example, for three cohorts, if you want to exclude two SNPs and fix some SNPs in a given file for iterative selection, and use 5 threads to speed up computation, use:
 
 ```bash
 ./manc_cojo \

@@ -9,7 +9,7 @@ nav_order: 1
 
 GWAS tests for association between a trait and SNPs one at a time, giving marginal SNP effect estimates. 
 However, associations detected in GWAS are often not independent because of linkage disequilibrium (LD) between SNPs. 
-To address this challenge, [COJO](https://www.nature.com/articles/ng.2213) has been proposed and widely used for single-ancestry analyses, where it identifies independent association signals through iterative conditioning on significant SNPs while jointly modelling their effects to account for LD. Building upon COJO, our multi-ancestry extension exploits population-specific LD differences to improve the detection of independent association signals and reduce false positives compared to single-ancestry COJO (and _ad hoc_ adaptations for multi-ancestry use).
+To address this challenge, [COJO](https://www.nature.com/articles/ng.2213) has been proposed and widely used for single-ancestry analyses, which identifies independent association signals through iterative conditioning on significant SNPs while jointly modelling their effects to account for LD. Building upon COJO, our multi-ancestry extension exploits population-specific LD differences to improve the detection of independent association signals and reduce false positives compared to single-ancestry COJO (and _ad hoc_ adaptations for multi-ancestry use).
 
 
 {: .note }
