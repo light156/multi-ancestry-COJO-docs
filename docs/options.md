@@ -67,7 +67,7 @@ Below options are extended to multiple cohorts (please see [Advanced Usages](htt
 | `--fix-drop`  | Drop fixed SNPs above `--fix-p` threshold before SNP selection |
 | `--var-from-ld` | Estimate genotypic variance from LD reference instead of 2pq |
 | `--hetero-report`  | Output Cochran's Q heterogeneity statistics (multi-cohort only) |
-| `--output-all`    | Save all `.cma.cojo`, `.jma.cojo`, `.ldr.cojo`, and `.badsnps` files |
+| `--output-all`    | Save all `.cma.cojo .jma.cojo .ldr.cojo .badsnps` files |
 
 
 
