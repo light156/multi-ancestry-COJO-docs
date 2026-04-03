@@ -8,14 +8,13 @@ The usage of Manc-COJO is largely consistent with the original GCTA COJO, with e
 
 ## Extension 1: Multi-cohort support
 
-Options `--bfile`, `--cojo-file`, `--keep`, `--remove` can accept multiple values, one per cohort.
+Many options can now accept multiple values. Specifically,
 
-- File paths must be provided in the same order across cohorts.
-- Empty strings ("") can be used when an option is not applied to a given cohort.
-- Both combined-chromosome bfiles (chromosomes 1–22 together) and per-chromosome bfiles are supported.
-- Only chromosomes 1–22 are currently supported.
+- For `--bfile, --cojo-file`, make sure the file paths are provided in the same order across cohorts for meaningful results.
+- For `--keep, --remove`, empty strings ("") can be used when an option is not applied to a given cohort.
+- For `--diff-freq, --maf, --maf-sumstat, --geno`, either provide one value for all cohorts, or one value per cohort.
 
-For example, for two cohorts, if you want to keep certain individuals in `list1.fam` for cohort 1 but remove individuals in `list2.fam` for cohort 2, use the following command:
+For example, for two cohorts, if you want to keep certain individuals in `list1.fam` for cohort 1 but remove individuals in `list2.fam` for cohort 2, exclude SNPs with frequency differences > 0.2 between genotype and sumstat file in cohort 1, and exclude all SNPs with MAF < 0.005 in genotypes for both cohorts, use the following command:
 
 ```bash
 ./manc_cojo \
@@ -23,6 +22,8 @@ For example, for two cohorts, if you want to keep certain individuals in `list1.
 --cojo-file GWAS_sumstat_path1 GWAS_sumstat_path2 \
 --keep list1.fam "" \
 --remove "" list2.fam \
+--diff-freq 0.2 1 \
+--maf 0.005 \
 --cojo-slct 
 ```
 
@@ -72,7 +73,10 @@ For example, for three cohorts, if you want to exclude two SNPs and fix three SN
 
 ## Extension 4: User-friendly SNP file operations
 
-Options `--extract`, `--exclude`, `--fix` and `--cojo-cond` require a file containing a list of SNPs.
+- Both combined-chromosome bfiles (chromosomes 1–22 together) and per-chromosome bfiles are supported. Only chromosomes 1–22 are currently supported.
+
+- Options `--extract`, `--exclude`, `--fix` and `--cojo-cond` require a file containing a list of SNPs.
+
 In practice, users often have an existing file in which SNP IDs appear in a specific column rather than a dedicated SNP list file. 
 In GCTA, these SNPs must be manually extracted into a separate file, which can be inconvenient.
 
@@ -90,14 +94,17 @@ In contrast, our software allows users to directly specify the column index (sta
 You can find an example usage in the [Tutorial](https://light156.github.io/multi-ancestry-COJO-docs/tutorial/#step-3-run-conditional-or-joint-analysis) section.
 
 
-## Differences
+## Differences from GCTA-COJO 
 
-The following behaviours intentionally differ from GCTA-COJO:
-
-1. Our software excludes SNPs whose genotypes are identical across all individuals.
-2. In output files, both **A1** and **A2** are reported for each SNP. **A1** corresponds to **refA** in GCTA outputs.  
-3. By default, our software does **not** generate `.cma.cojo` and `.ldr.cojo` files, as they can be very large and are not required for most use cases. Use `--output-all` to enable all output files, which will also record unqualified SNPs in the corresponding `.badsnps` files.
+Functional differences:
+1. GCTA does not guard against numeric underflow, with p-values smaller than $1.7 \times 10^{-308}$ stored as zero, which may occasionally lead to suboptimal SNPs being selected and influence subsequent steps. In comparison, our software uses absolute z-score instead of p-value for selection, which is mathematically equivalent but avoids numerical underflow. 
+2. Multiallelic SNPs with the same SNP ID are excluded, due to the limitations of current models based on biallelic assumptions. If you really want to include them, you need to manually rename them to different SNP names in input files. 
+3. SNPs with identical genotypes across all individuals are excluded.
 4. When collinearity issues arise among user-provided SNPs during conditional analysis (`--cojo-cond`) or joint analysis (`--cojo-joint`), GCTA terminates without output. In contrast, our software iteratively removes problematic SNPs until the issue is resolved. Removed SNPs are recorded in the `.log` file.
+
+Output format differences:
+1. In output files, both **A1** and **A2** are reported for each SNP. **A1** corresponds to **refA** in GCTA outputs.  
+2. By default, our software does **not** generate `.cma.cojo` and `.ldr.cojo` files, as they can be very large and are not required for most use cases. Use `--output-all` to enable all output files, which will also record unqualified SNPs in the corresponding `.badsnps` files.
 
 {: .highlight }
 For a complete list of supported command-line options, please refer to the [Command Options](https://light156.github.io/multi-ancestry-COJO-docs/options/) section.
