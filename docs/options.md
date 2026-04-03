@@ -86,5 +86,5 @@ Please refer to our paper for detailed methodological descriptions.
 
 | Option | Allowed Values | Default | Description |
 |:-------------|:------------------|:------|:------|
-| `--slct-mode` | `GCTA`, `removeNA`, `imputeNA` | `GCTA` | Iterative SNP selection method |
-| `--effect-mode` | `GCTA`, `removeNA`, `imputeNA` | `GCTA` | Effect size estimation method |
+| `--slct-mode` | `GCTA`, `imputeNA`, `removeNA` | `GCTA` | Iterative SNP selection method |
+| `--effect-mode` | `GCTA`, `imputeNA`, `removeNA` | `GCTA` | Effect size estimation method |
