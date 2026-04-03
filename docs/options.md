@@ -72,11 +72,9 @@ Below options are extended to multiple cohorts (please see [Advanced Usages](htt
 
 ## Algorithm options
 
-Manc-COJO implements three algorithms for both:
-- stepwise SNP selection (`--slct-mode`)
-- effect size estimation (`--effect-mode`)
+Manc-COJO implements three algorithms for both stepwise SNP selection (`--slct-mode`) and effect size estimation (`--effect-mode`). 
+Available options include 
 
-Available algorithm options include 
 - `GCTA` (default, original GCTA behaviour)  
   Impute missing genotypes when computing pairwise LD, and additionally adjust for missingness in GWAS summary statistics
 - `imputeNA`  
