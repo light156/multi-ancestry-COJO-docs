@@ -31,5 +31,6 @@ If you find our paper or software useful for your research, please consider citi
 
 ## Support
 
-Please contact Yong ([yong.wang@psych.ox.ac.uk](mailto:yong.wang@psych.ox.ac.uk)) for software-related enquries and bug reports, or Mark ([xiaotong.wang@psych.ox.ac.uk](mailto:xiaotong.wang@psych.ox.ac.uk)) for algorithm-related questions. 
-We welcome GitHub issues, including usage feedback and new feature requests, so that discussions are visible to all users.
+- Contact Mark ([xiaotong.wang@psych.ox.ac.uk](mailto:xiaotong.wang@psych.ox.ac.uk)) for algorithm-related questions.
+- Contact Yong ([yong.wang@psych.ox.ac.uk](mailto:yong.wang@psych.ox.ac.uk)) for software-related enquries and bug reports. 
+- We welcome GitHub issues, including usage feedback and new feature requests, so that discussions are visible to all users.
