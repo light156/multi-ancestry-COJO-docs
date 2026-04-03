@@ -10,9 +10,9 @@ The usage of Manc-COJO is largely consistent with the original GCTA COJO, with e
 
 Many options can now accept multiple values. Specifically,
 
-- For `--bfile --cojo-file`, make sure the file paths are provided in the same order across cohorts for meaningful results.
-- For `--keep --remove`, empty strings ("") can be used when an option is not applied to a given cohort.
-- For `--diff-freq --maf --maf-sumstat --geno`, either provide one value for all cohorts, or one value per cohort.
+- For `--bfile` and `--cojo-file`, make sure the file paths are provided in the same order across cohorts for meaningful results.
+- For `--keep` and `--remove`, empty strings ("") can be used when an option is not applied to a given cohort.
+- For `--diff-freq`, `--maf`, `--maf-sumstat`, and `--geno`, either provide one value for all cohorts, or one value per cohort.
 
 For example, for two cohorts, if you want to keep certain individuals in `list1.fam` for cohort 1 but remove individuals in `list2.fam` for cohort 2, exclude SNPs with frequency differences > 0.2 between genotype and sumstat file in cohort 1, and exclude all SNPs with MAF < 0.005 in genotypes for both cohorts, use the following command:
 
@@ -20,6 +20,7 @@ For example, for two cohorts, if you want to keep certain individuals in `list1.
 ./manc_cojo \
 --bfile path1 path2 \
 --cojo-file GWAS_sumstat_path1 GWAS_sumstat_path2 \
+--out Output_path_name \
 --keep list1.fam "" \
 --remove "" list2.fam \
 --diff-freq 0.2 1 \
@@ -65,9 +66,10 @@ For example, for three cohorts, if you want to exclude two SNPs and fix three SN
 ./manc_cojo \
 --bfile path1 path2 path3 \
 --cojo-file GWAS_sumstat_path1 GWAS_sumstat_path2 GWAS_sumstat_path3 \
+--out Output_path_name \
 --cojo-slct \
 --exclude-snp rs10001 rs10002 \
---fix-snp rs10003 rs10004 rs10005 \
+--fix snp_to_fix.txt \
 --thread-num 5
 ```
 
@@ -75,7 +77,7 @@ For example, for three cohorts, if you want to exclude two SNPs and fix three SN
 
 1. Both combined-chromosome bfiles (chromosomes 1–22 together) and per-chromosome bfiles are supported. Only chromosomes 1–22 are currently supported.
 
-2. Options `--extract --exclude --fix --cojo-cond` require a file containing a list of SNPs.
+2. Users can specify the column to read for `--extract`, `--exclude`, `--fix`, and `--cojo-cond`.
 
 In practice, users often have an existing file in which SNP IDs appear in a specific column rather than a dedicated SNP list file. 
 In GCTA, these SNPs must be manually extracted into a separate file, which can be inconvenient.
