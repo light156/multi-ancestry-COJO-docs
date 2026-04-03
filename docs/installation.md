@@ -38,6 +38,4 @@ This will print the available options and confirm that it runs correctly.
 
 ---
 
-If you have any problems running the software on your system, you may
-- Try building from source code by following the steps in [Building from Source](https://light156.github.io/multi-ancestry-COJO-docs/build/) (which is quite simple).
-- Feel free to reach out and we are very happy to help.
+If you have any problems running the software on your system, you can try building from source code by following the steps in [Building from Source](https://light156.github.io/multi-ancestry-COJO-docs/build/) (which is quite simple), or feel free to reach out and we are very happy to help.

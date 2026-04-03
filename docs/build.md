@@ -22,7 +22,7 @@ g++ -std=c++11 -O3 -march=native -DNDEBUG -fopenmp -I . src/*.cpp -o manc_cojo
 ```
 
 ### macOS
-macOS’s default compiler (Apple Clang) does not include OpenMP support. Although you can install LLVM via Homebrew for full OpenMP functionality, using one thread is already fast enough as shown above.
+macOS’s default compiler (Apple Clang) does not include OpenMP support. Although you can install LLVM via Homebrew for full OpenMP functionality, using one thread is already fast enough as shown on the home page.
 So it is fine to just build a single-threaded version for simplicity:
 
 ```bash

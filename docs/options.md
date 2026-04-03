@@ -29,7 +29,7 @@ These options and flags are functionally identical to those in the [original GCT
 |:-------------|:------------------|:------|
 | `--cojo-wind`      | SNP position window in Kb (`-1` disables windowing)            | `10000` (±1e7)   |
 | `--cojo-p`         | Significance threshold for SNP selection (`0-1`)               | `5e-8`           |
-| `--cojo-collinear` | Colinearity threshold for SNP inclusion (`0–0.9999`)           | `0.9`            |
+| `--cojo-collinear` | Collinearity threshold for SNP inclusion (`0–0.9999`)           | `0.9`            |
 | `--cojo-top-SNPs`  | Only select a fixed number of independently associated SNPs    | `10000`          |
 | `--extract`        | File path of SNPs to be included                               |                  |
 | `--exclude`        | File path of SNPs to be excluded                               |                  |
@@ -53,8 +53,8 @@ Below options are extended to multiple cohorts (please see [Advanced Usages](htt
 ## Manc-COJO Specific Options/Flags
 
 | Option         | Description                                                      | Default       |
-|:-------------|:------------------|
-| `--fix`        | File path for fixed SNPs for iterative selection             |               |
+|:-------------|:------------------|:------|
+| `--fix`        | File path of fixed SNPs for iterative selection             |               |
 | `--fix-snp`    | A list of fixed SNPs for iterative selection                 |               |
 | `--fix-p`         | Significance threshold for fixed SNPs (`0-1`)               | `5e-8`           |
 | `--fix-col` | Collinearity threshold for fixed SNPs (`0–0.9999`)           | `0.9`            |

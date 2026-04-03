@@ -99,13 +99,13 @@ Run the following command to perform conditional analysis:
 --cojo-cond Height_analysis.jma.cojo 2 header 
 ```
 
-This will produce an output file named `Height_analysis_cond.cma.cojo`. Note that `.cma.cojo` files are often substantially large.
+This will produce an output file named `Height_analysis_cond.cma.cojo`. Note that `.cma.cojo` files are often very large.
 
 ## Step 4: Extend to multi-ancestry analysis
 
 To extend the analysis to multiple ancestries, simply provide multiple GWAS summary statistics and LD reference panels. 
 
-As a minimal example, suppose we have two cohorts with identical input files. Multiple cohorts are specified by appending additional file paths after ``--bfile`` and ``--cojo-file``:
+As a minimal example, suppose we have two cohorts with identical input files. Multiple cohorts are specified by appending additional file paths after `--bfile` and `--cojo-file`:
 
 ```bash
 ./manc_cojo \
