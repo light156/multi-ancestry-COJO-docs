@@ -14,11 +14,11 @@ cd multi-ancestry-COJO
 
 Or download our software directly from the links below:
 
-### [⬇️ Download link (Linux)](https://github.com/light156/multi-ancestry-COJO/releases/download/v1.0.0/manc_cojo)
+### [⬇️ Download link (Linux)](https://github.com/light156/multi-ancestry-COJO/releases/download/v1.1.0/manc_cojo)
 
-### [⬇️ Download link (Windows)](https://github.com/light156/multi-ancestry-COJO/releases/download/v1.0.0/manc_cojo_win.exe)
+### [⬇️ Download link (Windows)](https://github.com/light156/multi-ancestry-COJO/releases/download/v1.1.0/manc_cojo_win.exe)
 
-### [⬇️ Download link (macOS)](https://github.com/light156/multi-ancestry-COJO/releases/download/v1.0.0/manc_cojo_macOS)
+### [⬇️ Download link (macOS)](https://github.com/light156/multi-ancestry-COJO/releases/download/v1.1.0/manc_cojo_macOS)
 
 <br> 
 
