@@ -8,7 +8,6 @@ nav_order: 2
 Manc-COJO can be installed via Bioconda or Docker:
 
 [![install with bioconda](https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg?style=flat)](https://bioconda.github.io/recipes/manc_cojo/README.html)
-
 [![install with docker](https://img.shields.io/badge/install_with-docker-blue)](https://quay.io/repository/biocontainers/manc_cojo?tab=tags)
 
 
