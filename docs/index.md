@@ -38,9 +38,7 @@ If you find our paper or software useful for your research, please consider citi
 
 ## License and Acknowledgments
 
-- This project is released under the **MIT License** (see the `LICENSE` file for details).
-
-- This project includes or depends on the following third-party open-source libraries: **[Eigen 3.4.1](https://eigen.tuxfamily.org)**, **[CLI11](https://github.com/CLIUtils/CLI11)**, **[fastfloat](https://github.com/fastfloat/fast_float)**, and **[doctest](https://github.com/doctest/doctest)** (tests only).
+- This project is released under the **MIT License**, and includes or depends on the following third-party open-source libraries: **[Eigen 3.4.1](https://eigen.tuxfamily.org)**, **[CLI11](https://github.com/CLIUtils/CLI11)**, **[fastfloat](https://github.com/fastfloat/fast_float)**, and **[doctest](https://github.com/doctest/doctest)** (tests only).
 
 - We thank Dr. Lin Tian, Dr. Siqi Wang, and Dr. Ang Li for testing the software and providing feedback.
 
