@@ -34,3 +34,17 @@ If you find our paper or software useful for your research, please consider citi
 - Contact Mark ([xiaotong.wang@psych.ox.ac.uk](mailto:xiaotong.wang@psych.ox.ac.uk)) for algorithm-related questions.
 - Contact Yong ([yong.wang@psych.ox.ac.uk](mailto:yong.wang@psych.ox.ac.uk)) for software-related enquiries and bug reports. 
 - We welcome GitHub issues, including usage feedback and new feature requests, so that discussions are visible to all users.
+
+
+## License and Acknowledgments
+
+- This project is released under the **MIT License** (see the `LICENSE` file for details).
+
+- This project includes or depends on the following third-party open-source libraries: **[Eigen 3.4.1](https://eigen.tuxfamily.org)**, **[CLI11](https://github.com/CLIUtils/CLI11)**, **[fastfloat](https://github.com/fastfloat/fast_float)**, and **[doctest](https://github.com/doctest/doctest)** (tests only).
+
+- We thank Dr. Lin Tian, Dr. Siqi Wang, and Dr. Ang Li for testing the software and providing feedback.
+
+- We thank Dr. Vince Forgetta for testing the software and valuable discussions on the comparison with GCTA-COJO.
+
+- We thank Peter Kruczkiewicz for making Manc-COJO available through Bioconda and Docker.
+

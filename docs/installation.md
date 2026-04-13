@@ -5,14 +5,14 @@ nav_order: 2
 
 # Installation
 
-You can clone our repository using Git:
+Manc-COJO can be installed via Bioconda or Docker:
 
-```bash
-git clone https://github.com/light156/multi-ancestry-COJO.git
-cd multi-ancestry-COJO
-```
+[![install with bioconda](https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg?style=flat)](https://bioconda.github.io/recipes/manc_cojo/README.html)
 
-Or download our software directly from the links below:
+[![install with docker](https://img.shields.io/badge/install_with-docker-blue)](https://quay.io/repository/biocontainers/manc_cojo?tab=tags)
+
+
+Or you can directly download from the links below:
 
 ### [⬇️ Download link (Linux)](https://github.com/light156/multi-ancestry-COJO/releases/download/v1.1.0/manc_cojo)
 
