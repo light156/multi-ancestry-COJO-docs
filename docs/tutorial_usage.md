@@ -35,7 +35,8 @@ Manc-COJO supports two alternative LD input formats:
   Requires `.bed`, `.bim`, and `.fam` files.
 - Precomputed LD matrices via `--ld`  
   Requires `.bim` and `.ld` files. To filter SNPs with large allele-frequency discrepancies, `.frq` files should also be provided.  
-  **Note:** To adapt to the various ways of storing LD files, we define that the `.ld` file must contain exactly three whitespace-delimited columns in the order `SNP1 SNP2 R` (no header). Users should organize the LD matrix to this format before passing the file to Manc-COJO.
+
+**Note:** To adapt to the various ways of storing LD files, we define that the `.ld` file must contain exactly three whitespace-delimited columns in the order `SNP1 SNP2 R` (no header). Users should organize the LD matrix to this format before passing the file to Manc-COJO.
 
 Just replace `--bfile` with `--ld`:
 
