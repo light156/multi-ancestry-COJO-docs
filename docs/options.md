@@ -10,7 +10,7 @@ nav_order: 4
 | Option      | Description                                                   |
 |:-------------|:------------------|
 | `--bfile`   | PLINK binary file prefix for each cohort `.bim .bed .fam`    |
-| `--ld`      | PLINK LD file prefix for each cohort `.bim .ld (.frq)`       |
+| `--ld`      | LD file prefix for each cohort `.bim .ld (.frq)`. The `.ld` file must contain exactly three whitespace-delimited columns in the order `SNP1 SNP2 R` (no header). |
 | `--cojo-file`  | GWAS summary statistics file for each cohort in GCTA-COJO format<br>(Header `SNP A1 A2 freq b se p N`)    | 
 | `--out`        | Output file path prefix                                    |
 
